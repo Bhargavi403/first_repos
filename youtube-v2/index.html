@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Will not be viewable in the Browser's view port -->
+  <title>YouTube Home!</title>
+
+  <!-- ideal place for your external styles-->
+  <link rel="stylesheet" href="./assets/styles/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- internal style -->
+  <style>
+    /* element selector  */ 
+    div a {
+      background-color: rgb(238, 238, 238);
+      border: 1px solid gray;
+      padding: 9px 15px;   /* top bottom and right left */
+      border-radius: 22px;
+      color: rgb(71, 71, 71);
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Viewable in Browser's View port -->
+  <header>
+    <a href="./index.html"><img src="./assets/images/youtube-logo.png" alt="YouTube Logo"></a>
+    <input id="searchInput" type="search" placeholder="Search from 1B+ Videos">
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><button type="button">Signin</button></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <!-- inline styles -->
+  <div class="suggestions" style="border: 1px solid rgb(182, 182, 182); padding: 22px;">
+    <a href="#">HTML</a>
+    <a href="#">CSS</a>
+    <a href="#">JS</a>
+    <a href="#">Latest JS</a>
+    <a href="#">NodeJS commands</a>
+    <a href="#">Bootstrap</a>
+    <a href="#">Typescript</a>
+  </div>
+
+  <main>
+    <div class="video-container">
+      <section class="video-box">
+        <img src="https://via.placeholder.com/250x200" alt="video 1">
+        <h2>Video title 1</h2>
+        <p>Sony Music South</p>
+        <p>45 Lakhs | 3 hours ago</p>
+      </section>   
+
+      <section class="video-box">
+        <img src="https://via.placeholder.com/250x200" alt="video 1">
+        <h2>Video title 2</h2>
+        <p>Sony Music South</p>
+        <p>45 Lakhs | 3 hours ago</p>
+      </section>
+
+      <section class="video-box">
+        <img src="https://via.placeholder.com/250x200" alt="video 1">
+        <h2>Video title 3</h2>
+        <p>Sony Music South</p>
+        <p>45 Lakhs | 3 hours ago</p>
+      </section>
+
+      <section class="video-box">
+        <img src="https://via.placeholder.com/250x200" alt="video 1">
+        <h2>Video title 4</h2>
+        <p>Sony Music South</p>
+        <p>45 Lakhs | 3 hours ago</p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <hr>
+    
+    <p>Copyright 2022 | Arun </p>
+  </footer>
+
+</body>
+
+</html>
