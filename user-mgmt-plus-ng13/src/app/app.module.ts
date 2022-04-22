@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -39,7 +40,8 @@ import { UserDetailsComponent } from './users/components/user-details/user-detai
     BrowserModule,
     AppRoutingModule,
     FormsModule, // Needed for ngModel to work
-    ReactiveFormsModule // Needed for ReactiveForms to work
+    ReactiveFormsModule, // Needed for ReactiveForms to work
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent] // Step 3: AppModule bootstraps AppComponent // root component - main component
