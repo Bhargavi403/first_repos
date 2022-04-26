@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -10,13 +10,14 @@ import { FooterComponent } from './shared/components/footer/footer.component';
 import { MenuComponent } from './shared/components/menu/menu.component';
 import { HomeComponent } from './home/components/home.component';
 import { ConceptsComponent } from './concepts/components/concepts.component';
-import { UsersComponent } from './users/components/users.component';
 import { AboutComponent } from './about/components/about.component';
 import { CpbComponent } from './concepts/components/cpb/cpb.component';
 import { CebComponent } from './concepts/components/ceb/ceb.component';
 import { ColorizerDirective } from './concepts/directives/colorizer.directive';
-import { AddUserComponent } from './users/components/add-user/add-user.component';
-import { UserDetailsComponent } from './users/components/user-details/user-details.component';
+import { UsersModule } from './users/users.module';
+import { ProductsModule } from './products/products.module';
+import { LoginComponent } from './auth/components/login/login.component';
+import { SignupComponent } from './auth/components/signup/signup.component';
 
 // Decorator
 // Main Switching Box
@@ -28,20 +29,20 @@ import { UserDetailsComponent } from './users/components/user-details/user-detai
     MenuComponent,
     HomeComponent,
     ConceptsComponent,
-    UsersComponent,
     AboutComponent,
     CpbComponent,
     CebComponent,
     ColorizerDirective,
-    AddUserComponent,
-    UserDetailsComponent
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    UsersModule, // feature module
+    ProductsModule,
+    AppRoutingModule,  // routing module setup
     FormsModule, // Needed for ngModel to work
-    ReactiveFormsModule, // Needed for ReactiveForms to work
-    HttpClientModule
+    HttpClientModule 
   ],
   providers: [],
   bootstrap: [AppComponent] // Step 3: AppModule bootstraps AppComponent // root component - main component

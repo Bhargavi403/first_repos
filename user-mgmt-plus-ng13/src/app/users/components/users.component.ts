@@ -1,5 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
+import { User } from '../models/user.model';
 import { UserService } from '../services/user.service';
 
 @Component({
@@ -10,7 +11,7 @@ import { UserService } from '../services/user.service';
 })
 export class UsersComponent implements OnInit, OnDestroy {
 
-  userList: any[] = [];
+  userList: User[] = [];
   usersSubscription: Subscription | undefined;
 
   constructor(private userService: UserService) { // 0. connect with the service 
@@ -25,7 +26,7 @@ export class UsersComponent implements OnInit, OnDestroy {
     // ideal place for you to send ajax calls
     // 1. send the req to the service 
     this.usersSubscription = this.userService.getUsers()
-      .subscribe( (res: any) => { // 2. get the res from the service 
+      .subscribe( (res: User[]) => { // 2. get the res from the service 
         console.log(res);
         this.userList = res;
       });
