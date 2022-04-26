@@ -54,7 +54,7 @@
 
       <div class="form-group row">
         <div class="col-sm-10 offset-sm-2">
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" class="btn btn-primary" [disabled]="addUserForm.invalid">Submit</button>
           <!-- TODO: Learn about disabling the button in case of error-->
         </div>
       </div>
