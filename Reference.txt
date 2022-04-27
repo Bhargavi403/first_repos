@@ -1,0 +1,1026 @@
+
+Github Repo Link: https://github.com/arunprabu/Fujitsu-Course-April2022
+
+
+Participants are requested to send an email to “labsupport@iiht.com”
+“itsupport@iiht.com” (With error screenshot), if in case  facing the lab connectivity issues.
+
+
+Webapps
+---
+  1. Server-Side Rendering Apps (SSR)
+      * Traditional Web Apps 
+
+      Arch 
+      ---
+        1 Server 
+      
+      Codebase
+      ----
+        Front End (HTML, CSS, JS) + BAck End (Java/.Net/PHP/Python/Perl/Ruby/NodeJS) + DB Queries (SQL/NoSQL)
+        Response: HTML, CSS, JS + Data
+
+      Characteristics
+      ---
+        Pages will refresh 
+
+      Adv 
+      --
+        * Search Engine Friendly
+        * Initial Loading will not take longer
+
+      Disadv
+      ---
+        * Server has to do the heavy-lifting 
+        * Slower Webapps 
+        * Complex Codebase resulting maintenance chaos 
+        * High Bandwidth Consumption
+        * Expensive
+
+
+  2. Client-Side Rendering Apps (CSR)
+      * Modern Webapps 
+      Arch 
+      ---
+        2 Servers 
+          1 Server for the Front End App 
+          1 Server for the Back End App 
+      
+      Codebase
+      ----
+        1 Front End App => (HTML, CSS, JS) -- Port 4200
+          * Will be called as Single Page App (SPA)
+          Response: HTML, CSS, JS, placeholder for data
+
+        1 Back End App => (Java/.Net/PHP/Python/Perl/Ruby/NodeJS) + DB Queries (SQL/NoSQL) --- Port 8080
+          * will be called as RESTful API
+          Response: Data (JSON)
+
+      SPA Characteristics (7)
+      ---
+        1. Pages should not refresh 
+        2. URL should change 
+        3. History should be maintained
+        4. Header and Footer should be intact. 
+        5. In between section should be contextually updated
+        6. Active Menu should be set
+        7. Page Title should be changed 
+
+      Adv 
+      --
+        * Workload is shared between two servers 
+        * Faster webapps 
+        * Well-organized codebase
+        * Less Bandwidth Consumption
+        * Less Expensive 
+
+      Disadv
+      ---
+        * Not search engine friendly (We can fix it)
+        * Initial Loading will take longer ( We can fix it)
+
+
+How to Develop SPA?
+==================
+  SPA Frameworks/ Libraries
+  ---
+     #1. React JS  (Library )
+     #2. VueJS  (Framework)
+     #3. Angular 13+  (Framework)
+     #4. Svelte JS (Framework)
+     
+
+=====
+Browser
+=====
+  HTML Renderer  (HTML)
+  CSS Parser  (CSS)
+  JS Engine  (JS)
+
+================
+
+
+
+========================================================
+Ref: https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_video
+
+====
+Website/Webapp
+  HTML - Structural Layer  
+  CSS - Presentation Layer 
+  JS  - Interaction Layer 
+
+
+===
+Elements / Tags in HTML
+---
+  1. Block Level Elements
+      Examples: h1 to h6, p, div, header, footer, main, section, article, nav, aside
+
+  2. Inline Elements
+      Examples: a, span, input, img, video, audio, label
+
+Semantic Elements 
+---
+  h1 to h6, p, a, header, footer, main, section, article, nav, aside
+
+Non-Semantic Elements
+---
+  div, span
+
+
+HTML5
+---
+  New Elements
+    header, footer, main, section, article, nav, aside
+
+  New Attributes
+====
+
+
+CSS
+---
+  Cascading Style Sheet 
+
+  Types of Stylesheets
+  ----
+    1. Inline Styles
+        * written in the element itself 
+
+         Disadv
+         ---
+          1. Can't reuse styles 
+          2. Mixing up both Structural Layer and Presentation Layer
+         
+    2. Internal Styles 
+        * Written inside html file itself
+
+        Disadv
+        ---
+          1. Can't reuse styles in other html files
+          2. Mixing up both Structural Layer and Presentation Layer
+          
+    3. External Styles 
+        * Written in separate file with extn .css 
+        * Can be reused in multiple html files
+
+
+  CSS Syntax 
+  -----
+    selector {
+      /* style definition */ 
+      property1: value1;
+      property2: value2;
+    }
+
+  Types of Selectors
+  ---
+    1. Element Selector      
+    2. Id Selector 
+    3. Class Selector (Recommended)
+    4. Attribute Selector 
+    5. Pseudo Selector [TODO]
+
+
+===
+Placing two block level Elements nearby
+---
+  1. using inline-block  Ref: https://jsbin.com/gujepuxavi/edit?html,css,output
+  2. using float (TODO)
+  3. using flex boxes in CSS3 
+
+  
+=
+
+====
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {...}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
+
+
+==================
+
+SASS
+---
+  CSS + OOP features 
+  SASS / SCSS => (preprocessor) => CSS 
+
+
+
+
+Layouts in Web
+---
+1. Fixed Layout
+2. Fluid Layout  
+===
+Java
+---
+  Backend 
+  Desktop Apps 
+  Mobile App (Android App)
+
+DotNet 
+---
+  Backend
+  Desktop Apps 
+  Mobile Apps (Xamarine - iOS And Android apps )
+
+==
+PHP
+--
+  Backend
+
+Python
+---
+  Backend
+  Desktop Apps 
+  Mobile Apps
+  
+  Machine Learning (AI/ML)
+  DataScience 
+
+---
+JavaScript 
+====
+  FrontEnd (JS/jQuery/Angular/ReactJS/VueJS)
+  Backend (NodeJS / DenoJS)
+  Desktop Apps (Electron JS)
+  Mobile Apps (Ionic / React Native )
+  Interact with Database (MongoDB / NoSQL Database)
+
+===========
+
+JavaScript
+---
+  Datatypes in JS:
+  ----
+    Primitive Datatypes
+    ---
+      string, number, boolean, undefined, null, symbol (ES2015), bigint (ES2017)
+
+    Non-primitive Datatypes (Reference Types)
+    --
+      Object, array, regexp
+
+
+  1. Strictly-typed / Strongly-typed languages
+      Examples: Java, C# 
+      Syntax:
+      ---
+        String myName = "Arun";    //valid 
+        myName = true; // error -- compilation eror 
+
+  2. Loosely-typed Languages 
+      Examples: JS, PHP, Python 
+      Syntax in JS
+      -----
+        var myName = "Arun";  // valid 
+        myName = true; // valid 
+        myName = 100; // valid 
+        myName = 10.2; // valid 
+        myName = []; // valid 
+        myName = {}; // valid
+        myName = undefined; // valid 
+        myName = null; // valid 
+
+      * also known as dynamically-typed 
+
+
+===============
+
+
+
+JS History
+---
+  * Brendon Eich 
+  * 1995 
+  * Before 2015 -- JS -- was not object oriented language 
+      (no support to class, extends, import, export )
+
+  * From 2015 -- JS -- became object oriented language 
+      (class, extends, import, export)
+  
+
+ECMAScript  
+----
+  * ECMA international - 1997
+  * ECMAScript is a standard, Grammar for interaction lang 
+  * Implementations: JavaScript, JScript, ActionScript (Adobe), QtScript (Nokia), 
+                     Google App Script, 
+
+
+
+
+
+Browsers, Browser Family and Browser War 
+---
+
+Browser Core = HTML Renderer + CSS Parser + JS Engine
+
+  Firefox - Mozilla Core (open sourced -  2003)
+  Safari  - Apple Webkit Core (Open sourced -- 2005)
+  Chrome - Google Chromium Core = Webkit[60%] + Mozilla[30%] + Google's own code [v8] (Open Sourced )
+  Opera -- Google Chromium Core 
+  Edge - Google Chromium Core  
+  Brave - Google Chromium Core  
+
+------
+
+https://jsbin.com/fizeted/edit?html,js,output
+
+https://jsbin.com/minitoh/1/edit?js,console
+
+
+Dependencies
+---
+  1. Project Dependencies
+        * packages are needed for the functionality of the app to work
+        * Examples: bootstrap, jquery, dropzone, @angular/core
+        * Part of the production build
+        * will be tracked as dependencies in package.json file
+
+        commands
+        ---
+          npm i bootstrap 
+          npm i bootstrap --save 
+          npm i bootstrap -S 
+          npm i -S bootstrap 
+
+          npm update bootstrap 
+          npm uninstall bootstrap 
+
+  2. Dev Dependencies 
+        * Packages are needed just for the better, smoother development workflow. 
+        * Needed during development 
+        * Examples: webpack, gulp, grunt, typescript 
+        * Will not be Part of the production build
+         * will be tracked as devDependencies in package.json file
+
+        Commands
+        ---
+          npm i webpack --save-dev 
+          npm i webpack -D 
+          npm i -D webpack  
+
+          npm update webpack -D 
+          npm uninstall webpack -D
+
+---------
+
+
+TypeScript
+---
+  TS = JS + Datatyping 
+  * Microsoft 
+  * TS is a superset of JS
+  * Strictly-typed Language
+  * Compiled-to-JavaScript Languages 
+ 
+  Primitive Datatypes in Js 
+  ---
+    string, number, boolean, null, undefined, symbol, big int 
+
+  1. Loosely-typed Languages
+      Examples: JS, PHP, Python
+
+      Syntax in JS 
+      ---
+        var x = 10;
+        x = 'Arun'; // valid 
+        x = true; // valid 
+        x = []; 
+        x = {};
+        x = function(){
+
+        }
+        x = null; 
+        x = undefined; 
+
+  2. Strictly-Typed Languages
+
+      Examples: Java, C#, TS 
+
+      Syntax in Java, C#
+      ---
+        int x = 10;
+        x = 'Arun'; // error 
+
+-------
+  Syntax in TypeScript
+  ---
+    1. Explicit Datatyping 
+        var x: number  = 10; // valid 
+        x = 13100; // valid 
+        x = true; // error 
+  
+    2. Implicit Datatyping / Type Inference
+        var y = 20; // valid 
+        y = true; // error 
+
+
+  ----
+  Some more examples 
+  ----------
+    var i: number = 10;
+    var myName: string = "Arun";
+    var isLoggedIn: boolean = true;
+    var u: undefined = undefined;
+    var n: null = null; 
+
+    var myProfile1: Object = {};
+    var myProfile2: {} = {}; 
+
+    var colorList1: Array<string> = ["red", "green", "blue"];
+    var colorList2: string[] = ["red", "green", "blue"];
+    var colorList3: any[]  = ["red", "green", "blue", 343453 ];
+    
+    var x: any = 10;
+    x = true;
+    x = "arun";
+    x = function(){}
+
+    var empId: string | number = "54342";
+
+    function add(a: number, b: number): number {
+      return a + b;
+    }
+    add(10, 20);
+
+
+    let multiply = (a: number, b: number): number => a * b;
+    multiply(10, 20);
+
+
+    // Classes in TS 
+    class Car{
+      make: string = ''; // public variable 
+      private fuel: string = 'Petrol'; // class-wide pvt variable 
+
+      constructor(make: string){
+        this.make = make;
+
+        // locally scoped pvt variables
+        var x = 10;
+        let y = 20;
+        const z = 30;  
+      }
+
+      // public method
+      drive(): string{
+        return 'Driving ' + this.make;
+      }
+
+    }
+
+    var myCar: Car = new Car("Honda");
+    myCar.drive();
+
+    Interfaces
+    ---
+    interface IEmployee{ // custom data type 
+      name: string;
+      city: string;
+      zip?: number; // optional
+      age: number;
+    }
+
+    var empData1: IEmployee = {
+      name: 'John',
+      city: 'Sydney',
+      zip: 234434,
+      age: 30
+    }
+
+    var empData2: IEmployee = {
+      name: 'Steve',
+      city: 'Sydney',
+      age: 32
+    }
+
+
+
+Web Development Workflow
+---
+  TS => (TypeScript Compiler) => JS 
+
+----
+
+
+
+=====
+
+
+Angular 
+===
+
+Angular Building Blocks
+---
+  Components
+  Directives 
+  Services
+  Classes 
+  Models
+  Interfaces 
+  Pipes 
+  Guards
+  Modules 
+  Interceptors 
+
+----
+
+
+
+SPA Characteristics (7)
+---
+  1. Pages should not refresh [DONE]
+  2. URL should change [DONE]
+  3. History should be maintained [DONE]
+  4. Header and Footer should be intact. [DONE]
+  5. In between section should be contextually updated [DONE]
+  6. Active Menu should be set [DONE]
+  7. Page Title should be changed  [TODO]
+      
+Routing
+--
+  Step 0:
+  ----  
+    Identify the URL's 
+    Home            - http://localhost:4200/ 
+    Concepts        - http://localhost:4200/concepts 
+    User Manager    - http://localhost:4200/users
+    About           - http://localhost:4200/about
+
+  Step 1:
+  ---
+    create the matching components for the identified URL's 
+
+    URL                                           Matching Component 
+    ----------------------------------------------------------------------------
+    http://localhost:4200/                        HomeComponent 
+    http://localhost:4200/concepts                ConceptsComponent 
+    http://localhost:4200/users                   UsersComponent 
+    http://localhost:4200/about                   AboutComponent 
+
+    ng g c home -it -is 
+    ng g c concepts -is 
+    ng g c users -is 
+    ng g c about -is 
+
+
+  Step 2: 
+  ---
+    Let's setup the URL's in menu.comp.html 
+
+  Step 3: 
+  --- 
+    URL is not stable. Let's configure the routes/URLs. 
+    Known as routing configuration. 
+    Open app-routing.module.ts file 
+
+  Step4: 
+  --
+    URLs will be stable now. But, the components are not loaded in between header and footer 
+    Let's work on it. 
+    Open app.comp.html 
+      add <router-outlet></router-outlet> in between header and footer 
+
+    
+  Step 5: 
+  --
+    Check the app. Page will still refresh. Let's fix it. 
+    in  menu.comp.html
+    replace href with routerLink 
+
+  Step 6: 
+  --
+    Let's work on setting active menu. 
+    in menu.comp.html , all a tags should have routerLinkActive="active" 
+
+    Home menu will always be active. Let's fix it. 
+
+  Step 7: 
+  --
+    in menu.comp.html, 
+    in first a tag add [routerLinkActiveOptions]="{exact: true}"
+
+Routing is over. 
+TODO: Setup page title 
+---
+
+====
+
+
+Data Binding 
+--
+  Have the data in comp ts and display in comp html 
+
+  1. Interpolation
+      TS => HTML 
+      {{ }}
+
+  2. Property Binding
+      TS => HTML 
+      []
+      
+  3. Event Binding 
+      TS <= HTML 
+      ()
+
+  4. Two Way Binding
+      TS <=> HTML 
+      [()]     -- banana in a box 
+      Note: Applicable to form elements such as input, textarea
+            import { FormsModule } from '@angular/forms';
+            And rewire the main switching box 
+
+  5. Custom Property Binding
+  6. Custom Event Binding 
+
+Cross Component Communication 
+---
+  1. Parent to Child Comp Communication 
+      using Custom Property Binding 
+
+      Step 1: Prepare in child comp to receive data from parent
+              -- Create Custom Property 
+      Step 2: Have the data in Parent comp 
+      Step 3: Send it to Child comp 
+
+  2. Child to Parent Comp Communication
+      2.1 Using Custom Event Binding 
+      2.2 Using @ViewChild() -- TOLEARN 
+
+  3. Any to Any Comp Communication
+      Prereq: Components, Services, Dependency Injection, RxJS/Observables, Subscription 
+
+
+TODOs of Thursday: 
+--
+Conditional Content Projection
+Setup Page Title in Routing 
+Handle 404 in angular app 
+find the index in *ngFor 
+ngSwitch 
+=====
+
+TODO's of Friday
+------
+TODO: @ViewChild() 
+TODO: try ngStyle 
+Disable the button if validation errors are present 
+Custom structural directive 
+@HostBinding()
+Phone number validation (min 10 chars) 
+
+
+
+Angular Forms
+----
+  1. Template-Driven Forms 
+      * Made with HTML 
+      * Based on template directives
+      * Easiest Type of Form in Angular
+      * Validations can be implemented using Directives 
+      * Based on FormsModule of @angular/forms 
+      * Asynchronous by nature 
+
+      Adv
+      --
+        * Easiest 
+        * Smaller learning curve 
+
+      Disadv
+      ---
+        * Not suitable for complex form validations
+        * Not suitable for Unit Testing 
+
+  2. Reactive Forms / Data-driven forms  [Recommended]
+      * Made with HTML, TS 
+      * Easy 
+      * Validations can be implemented with TS
+      * Based on ReactiveFormsModule of @angular/forms 
+      * Synchronous by nature 
+
+      Adv
+      ---
+        * suitable for complex form validations
+        * suitable for Unit Testing 
+
+      Disadv
+      ---
+        * Larger learning curve 
+
+-----
+
+
+Digital Commn
+---
+  1. Simplex 
+      * one way 
+      * can just send 
+      * examples: radio 
+
+  2. Half-Duplex 
+      * two-way but not in real time 
+      * can send and also receive
+      * examples: SMS, Pager
+
+  3. Full-Duplex 
+      * two-way in real-time 
+      * can send and receive in real-time 
+      * examples: Phone, Audio Chat, Video Chat 
+
+Commn over Web
+---
+  1. Half-Duplex 
+      Examples: Http  (PULL)
+      Client => Server 
+      Client <= Server 
+
+  2. Full-Duplex 
+      Examples: WebRTC (PUSH)
+      Client <=> Server
+
+----
+What's Observable?
+  It's a collection that returned over time. 
+  It's a push, that sends multiple values
+  Observable is like restaurant kitchen.
+  If you subscribe to observable, it decides when to give information 
+
+What's RxJs?
+  Various method of operators, you can chain on Observables to filter data, sort, remove, transform 
+
+
+====
+
+ ng g i users/models/User --type=model
+
+
+===
+
+Modules 
+---
+  Feature Modules  -- main switching box for the flats 
+
+  Feature Routing Modules  - navigational map for the flats 
+
+
+--
+Steps
+---
+  Step 1: Create feature routing module for the users feature 
+          ng g m users/users-routing --flat 
+  
+  Step 2: Create feature module for the users feature 
+          ng g m users/users --flat 
+
+  Step 3: Connect feature routing module with the feature module 
+
+  Step 4: Connect feature module with the app module 
+
+-----
+
+Step 1:  Create feature module for the users feature and Connect feature module with the app module 
+          ng g m products/products --flat -m=app  
+
+Step 2: Create feature routing module for the users feature and Connect feature routing module with the feature module 
+          ng g m products/products-routing --flat -m=products
+
+
+
+localhost:4200/products   -- product-list component 
+  ng g c products/components/product-list -is 
+
+localhost:4200/products/1   -- product-details component 
+  ng g c products/components/product-details -it -is  
+
+localhost:4200/products/cart   -- cart component 
+  ng g c products/components/cart -is 
+
+
+
+Build and Deployment
+--
+  Build Checklist
+  ---
+    * remove all console.log 
+    * check all pages with console opened and fix all errors 
+    * check the code quality 
+        ng lint 
+          enter y to the couple of questions 
+        after the setup is complete,
+        ng lint 
+
+        if not errors
+      
+    * take a build 
+        ng build 
+    
+
+
+    
+
+    Angular Building Blocks
+---
+  Components 
+  Directives 
+  Services
+  Classes / Models
+  Interfaces 
+  Modules
+  Guards
+  Interceptors 
+  Pipes 
+
+----
+
+Concepts
+--
+  Routing [DONE]
+  Data Binding [DONE]
+  Cross Comp Commn 
+    1. Parent to Child Comp Commn [DONE]
+    2. Child to Parent Comp Commn [DONE]
+    3. Any to Any Comp Commn 
+
+
+
+
+Project Structure
+--
+  #1 Feature wise and building-block wise project structure 
+
+  src/  
+    app/ 
+      home/ 
+      concepts/
+        components/
+          ...
+          ...
+          ...
+          cpb/
+            ...
+            ...
+          ceb/
+            ...
+            ...
+        directives/
+          colorizer/
+        services/
+          ...
+        pipes/
+          ...
+      users/
+        components/
+          ...
+          ...
+          ...
+        services/
+          ...
+        interfaces/
+          ...
+      products/
+        components/
+          product-list/
+          product-details/
+          cart/ 
+      about/  
+      auth/
+        components/
+          login/
+          signup/
+         
+      shared/
+        components/
+          header/
+          footer/
+          menu/
+          page-not-found/
+        services/
+          cart-data.service.ts 
+
+
+
+  #2 Building block-wise project structure 
+  src/
+    app/
+      components/
+      directives/
+      services/
+      models/
+      guards/
+      pipes/
+      modules/
+
+
+
+TODOs: 
+--
+Conditional Content Projection
+Setup Page Title in Routing 
+Handle 404 in angular app 
+find the index in *ngFor 
+ngSwitch 
+
+Guards
+---
+  * to protect entry gates (routes )
+  * there can be one or more guards protecting the entry gates
+  * verify the authenticity (login cred's )
+  * role of guard is to either allow or deny  ( guard will return true or false )
+
+  ng g g shared/guards/auth
+
+Pipes
+---
+  Some pipes in angular date, lowercase, uppercase 
+  Ref: https://angular.io/guide/pipes
+  
+
+  1. Pure Pipes 
+  2. Impure Pipes 
+
+
+====
+Software Requirements
+---
+  NodeJS v 12+ 
+  VS Code Editor 
+  Chrome Browser 
+
+  Angular CLI (Command Line Interface)
+
+  Angular 2  -- CLI Version 1.1.2  (npm i -g @angular/cli@1.1.2 )
+  ---  
+    * on top of typescript 
+    * SPA Framework - coded from scratch with new comp based architecture
+    * September 2016 
+
+  Angular 4   - 2017     -- CLI Version 1.4.2  (npm i -g @angular/cli@1.4.2 )
+  Angular 5   - 2017     -- CLI Version 1.7.2  (npm i -g @angular/cli@1.7.2 )
+
+  Angular 6  - 2018      -- CLI Version 6  (npm i -g @angular/cli@6.x )
+  Angular 7  - 2018      -- CLI Version 7  (npm i -g @angular/cli@7.x )
+
+  Angular 8  - 2019      -- CLI Version 8  (npm i -g @angular/cli@8.x )
+
+  Angular 9  - 2020      -- CLI Version 9  (npm i -g @angular/cli@9.x)
+  Angular 10 - 2020      -- CLI Version 10  (npm i -g @angular/cli@10.x )
+  Angular 11 - 2020      -- CLI Version 11  (npm i -g @angular/cli@11.x )
+
+  Angular 12 - 2021      -- CLI Version 12  (npm i -g @angular/cli@12.x )
+  Angular 13 - 2021      -- CLI Version 13  (npm i -g @angular/cli@13.3.3)
+  
+  Angular 14 - 2022      -- CLI Version 14  (npm i -g @angular/cli@14.0.1)
+
+---
+
+====
+
+
+Automated Testing
+---
+
+  0. Static Type Checking 
+      TypeScript, FlowJS 
+      
+  1. Unit Testing
+      * testing small unit of the project
+      * testing only the comp 
+      * dev will write unit test cases 
+      * dev will do the coding against the test cases 
+
+      Tools: JasmineJS (Unit Testing Framework), Karma (Test Runner)        
+
+  2. Integration / Functional Testing 
+      * testing the whole app after integrating with multiple features 
+      * testing only the comp + services 
+    
+      Tools: Tools: JasmineJS (Unit Testing Framework), Karma (Test Runner)  
+
+  3. E2E Testing 
+      * End to End Testing 
+      * Final level of testing 
+      * QA Members 
+
+      Tools: Protractor, Cypress, Selenium 
+
+
+=====
+
+  
