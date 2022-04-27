@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from 'src/app/auth/services/auth.service';
 import { CartDataService } from '../../services/cart-data.service';
 
 @Component({
@@ -10,7 +11,7 @@ export class HeaderComponent implements OnInit {
 
   cartCount: number = 0;
 
-  constructor(private cartDataService: CartDataService ) { }
+  constructor(private cartDataService: CartDataService, private authService: AuthService ) { }
 
   ngOnInit(): void {
     // Let's subscribe to the cart data
@@ -19,6 +20,11 @@ export class HeaderComponent implements OnInit {
       this.cartCount = cartItems.length;
     });
 
+  }
+
+  handleLogout(){
+    this.authService.logout();
+    alert('Logged out');
   }
 
 }

@@ -26,4 +26,10 @@ export class AuthService {
       return false;
     }
   }
+
+  logout(){
+    if(sessionStorage.getItem('authToken')){
+      sessionStorage.removeItem('authToken');
+    }
+  }
 }
