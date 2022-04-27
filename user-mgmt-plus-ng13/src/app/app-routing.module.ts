@@ -11,7 +11,7 @@ import { AuthGuard } from './shared/guards/auth.guard';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'concepts', component: ConceptsComponent, canActivate: [AuthGuard] },
-  { path: 'about', component: AboutComponent, canActivate: [AuthGuard]},
+  { path: 'about', component: AboutComponent },
   { path: 'signup', component: SignupComponent },
   { path: 'login', component: LoginComponent },
   // TODO: Work on 404 
