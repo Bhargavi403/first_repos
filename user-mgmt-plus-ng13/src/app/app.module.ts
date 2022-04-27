@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,6 +18,7 @@ import { UsersModule } from './users/users.module';
 import { ProductsModule } from './products/products.module';
 import { LoginComponent } from './auth/components/login/login.component';
 import { SignupComponent } from './auth/components/signup/signup.component';
+import { AuthInterceptor } from './shared/interceptors/auth.interceptor';
 
 // Decorator
 // Main Switching Box
@@ -44,7 +45,9 @@ import { SignupComponent } from './auth/components/signup/signup.component';
     FormsModule, // Needed for ngModel to work
     HttpClientModule 
   ],
-  providers: [],
+  providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true}
+  ],
   bootstrap: [AppComponent] // Step 3: AppModule bootstraps AppComponent // root component - main component
 })
 export class AppModule { }
