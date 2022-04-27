@@ -1,1 +1,116 @@
-<p>about works!</p>
+<div class="container">
+  <h1>Pipes - Demo</h1>
+  <p>Pipes -- tranform info from one formate to another</p>
+  <p>{{dummyText}}</p>
+  <p>Uppercase Pipe - Demo: {{dummyText | uppercase }}</p>
+  <p>Lowercase Pipe - Demo: {{dummyText | lowercase }}</p>
+
+  <p>{{today}}</p>
+  <p>{{today | date }}</p>
+
+  <!-- Parameterised Pipes-->
+  <p>{{today | date: 'shortDate' }}</p>
+  <p>{{today | date: 'dd/MMM/yyyy' }}</p>
+  <p>{{today | date: '@ hh:mm:ss a on MMM dd, yyyy' }}</p>
+  
+  <!-- Chaining Pipe -->
+  <p>{{today | date: '@ hh:mm:ss a on MMM dd, yyyy' | lowercase }}</p>
+
+  <p>The hero's birthday is {{ birthday | date:format }}</p>
+  <button type="button" (click)="toggleFormat()">Toggle Format</button>
+  <hr>
+
+  
+
+  <!-- Custom Pipe -->
+  <h2>Custom Pipe - ng g p shared/pipes/ellipsis</h2>
+  <p>{{sampleText}}</p>
+  <p>{{sampleText | ellipsis }}</p>
+  <p>{{sampleText | ellipsis: 32 }}</p>
+  <p>{{sampleText | ellipsis: 48 }}</p>
+  <p>{{sampleText | ellipsis: 64 }}</p>
+
+  <hr>
+  <h2>Custom Module from third party</h2>
+  <table datatable class="row-border hover">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>First name</th>
+        <th>Last name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Foo</td>
+        <td>Bar</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Someone</td>
+        <td>Youknow</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Iamout</td>
+        <td>Ofinspiration</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Yoda</td>
+        <td>Skywalker</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Patrick</td>
+        <td>Dupont</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Barack</td>
+        <td>Obama</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>François</td>
+        <td>Holland</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>Michel</td>
+        <td>Popo</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>Chuck</td>
+        <td>Norris</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>Simon</td>
+        <td>Robin</td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td>Louis</td>
+        <td>Lin</td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>Zelda</td>
+        <td>Link</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Dropzone using Third party package</h3>
+  <ngx-dropzone (change)="onSelect($event)">
+    <ngx-dropzone-label>Drop it, baby!</ngx-dropzone-label>
+    <ngx-dropzone-preview *ngFor="let f of files" [removable]="true" (removed)="onRemove(f)">
+      <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
+    </ngx-dropzone-preview>
+  </ngx-dropzone>
+
+
+</div>

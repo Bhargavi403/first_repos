@@ -19,6 +19,10 @@ import { ProductsModule } from './products/products.module';
 import { LoginComponent } from './auth/components/login/login.component';
 import { SignupComponent } from './auth/components/signup/signup.component';
 import { AuthInterceptor } from './shared/interceptors/auth.interceptor';
+import { EllipsisPipe } from './shared/pipes/ellipsis.pipe';
+import { DataTablesModule } from 'angular-datatables';
+import { NgxDropzoneModule } from 'ngx-dropzone';
+
 
 // Decorator
 // Main Switching Box
@@ -35,7 +39,8 @@ import { AuthInterceptor } from './shared/interceptors/auth.interceptor';
     CebComponent,
     ColorizerDirective,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    EllipsisPipe
   ],
   imports: [
     BrowserModule,
@@ -43,7 +48,9 @@ import { AuthInterceptor } from './shared/interceptors/auth.interceptor';
     ProductsModule,
     AppRoutingModule,  // routing module setup
     FormsModule, // Needed for ngModel to work
-    HttpClientModule 
+    HttpClientModule,
+    DataTablesModule,
+    NgxDropzoneModule
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true}
