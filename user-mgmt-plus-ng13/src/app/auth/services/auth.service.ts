@@ -17,6 +17,13 @@ export class AuthService {
         console.log(res);
         return res;
       }));
+  }
 
+  isAuthenticated(): boolean {
+    if(sessionStorage.getItem('authToken')){
+      return true;
+    }else{
+      return false;
+    }
   }
 }
