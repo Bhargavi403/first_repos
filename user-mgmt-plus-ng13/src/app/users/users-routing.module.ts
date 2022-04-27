@@ -8,9 +8,9 @@ import { UserDetailsComponent } from './components/user-details/user-details.com
 // Feature Routing Module for Users Feature
 // Let's setup feature routing config 
 const routes: Routes = [
-  { path: 'users', component: UsersComponent },
-  { path: 'users/add', component: AddUserComponent },
-  { path: 'users/:id', component: UserDetailsComponent },   //  Setting URL Param - id is the URL Param
+  { path: '', component: UsersComponent },
+  { path: 'add', component: AddUserComponent },
+  { path: ':id', component: UserDetailsComponent },   //  Setting URL Param - id is the URL Param
 ];
 
 @NgModule({

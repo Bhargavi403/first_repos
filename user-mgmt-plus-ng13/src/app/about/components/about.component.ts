@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styles: [
   ]
 })
-export class AboutComponent implements OnInit {
+export class AboutComponent {
 
   dummyText = 'Lorem ipsum dolor sit amet consectetur adipisicing elit.';
 
@@ -20,9 +20,6 @@ export class AboutComponent implements OnInit {
   files: File[] = [];
 
   constructor() { }
-
-  ngOnInit(): void {
-  }
 
   get format()   {
     return this.toggle ? 'shortDate' : 'fullDate'; 

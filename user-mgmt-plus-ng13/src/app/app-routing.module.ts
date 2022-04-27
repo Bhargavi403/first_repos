@@ -14,6 +14,14 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'signup', component: SignupComponent },
   { path: 'login', component: LoginComponent },
+  {
+    path: 'users',
+    loadChildren: () => import('./users/users.module').then(m => m.UsersModule)
+  },
+  {
+    path: 'products',
+    loadChildren: () => import('./products/products.module').then(m => m.ProductsModule)
+  }
   // TODO: Work on 404 
 ];
 

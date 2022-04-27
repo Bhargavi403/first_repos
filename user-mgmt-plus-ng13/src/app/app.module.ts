@@ -14,8 +14,6 @@ import { AboutComponent } from './about/components/about.component';
 import { CpbComponent } from './concepts/components/cpb/cpb.component';
 import { CebComponent } from './concepts/components/ceb/ceb.component';
 import { ColorizerDirective } from './concepts/directives/colorizer.directive';
-import { UsersModule } from './users/users.module';
-import { ProductsModule } from './products/products.module';
 import { LoginComponent } from './auth/components/login/login.component';
 import { SignupComponent } from './auth/components/signup/signup.component';
 import { AuthInterceptor } from './shared/interceptors/auth.interceptor';
@@ -44,8 +42,6 @@ import { NgxDropzoneModule } from 'ngx-dropzone';
   ],
   imports: [
     BrowserModule,
-    UsersModule, // feature module
-    ProductsModule,
     AppRoutingModule,  // routing module setup
     FormsModule, // Needed for ngModel to work
     HttpClientModule,

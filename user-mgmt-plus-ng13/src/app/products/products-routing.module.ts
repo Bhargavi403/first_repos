@@ -7,9 +7,9 @@ import { CartComponent } from './components/cart/cart.component';
 
 // configuring child routes
 const routes: Routes = [
-  { path: 'products', component: ProductListComponent },
-  { path: 'products/cart', component: CartComponent },
-  { path: 'products/:id', component: ProductDetailsComponent }
+  { path: '', component: ProductListComponent },
+  { path: 'cart', component: CartComponent },
+  { path: ':id', component: ProductDetailsComponent }
 ];
 
 @NgModule({
